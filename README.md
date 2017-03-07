@@ -1,0 +1,1 @@
+Sample solution for StackOverflow question [Unable to inject remote bean on JBoss EAP 7: ClassCastException ](http://stackoverflow.com/questions/42618757/unable-to-inject-remote-bean-on-jboss-eap-7-classcastexception/42626902?noredirect=1#comment72424124_42626902)
