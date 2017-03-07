@@ -20,9 +20,11 @@ import com.stackoverflow.p42618757.api.ServiceBeanInterface;
 @WebServlet(urlPatterns = "/")
 public class Client extends HttpServlet {
 
-    private static final String SERVICE_BEAN_JNDI_NAME = "java:global/serverapp-1.0-SNAPSHOT/ServiceBean!com.stackoverflow.p42618757.api.ServiceBeanInterface";
+    private static final long serialVersionUID = 3018345651448328971L;
+
+    private static final String SERVICE_BEAN_JNDI_NAME = "java:global/serverapp/ServiceBean!com.stackoverflow.p42618757.api.ServiceBeanInterface";
     //        @EJB(lookup= SERVICE_BEAN_JNDI_NAME)
-    private ServiceBeanInterface serviceBeanInterface;
+    private transient ServiceBeanInterface serviceBeanInterface;
 
     @Override
     public void init(ServletConfig config) throws ServletException {

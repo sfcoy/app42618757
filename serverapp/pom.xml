@@ -12,6 +12,10 @@
     <artifactId>serverapp</artifactId>
     <packaging>war</packaging>
 
+    <build>
+        <finalName>serverapp</finalName>
+    </build>
+    
     <dependencies>
         <!--<dependency>-->
             <!--<groupId>com.stackoverflow.42618757</groupId>-->
